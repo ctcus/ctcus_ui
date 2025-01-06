@@ -1,0 +1,185 @@
+header {
+  background: #800000;
+  color: white;
+  padding: 1rem;
+  text-align: center; /* Center the logo */
+  position: relative; /* For positioning watermarks */
+}
+
+/* Logo and Header Content */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-container img.logo {
+  width: 75px; /* Increased size by 50% */
+  height: 75px;
+  margin-right: 10px;
+}
+
+.header-container img.watermark-left,
+.header-container img.watermark-right {
+  position: absolute;
+  opacity: 0.2; /* Watermark effect */
+  width: 50%; /* Reduced by 50% */
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-container img.watermark-left {
+  left: 10px;
+}
+
+.header-container img.watermark-right {
+  right: 10px;
+}
+
+.header-container h1 {
+  font-size: 2.5rem; /* Increased size */
+  font-weight: bold;
+}
+
+.header-container h2 {
+  font-size: 1.75rem;
+}
+
+.header-container p {
+  font-size: 1.25rem;
+}
+
+/* Second Navigation Bar */
+.second-nav {
+  background: #ffd254; /* Second nav bar color */
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.second-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center the menu items */
+  gap: 2rem;
+}
+
+.second-nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth shadow effect */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Add shadow to menu text */
+}
+
+.second-nav ul li a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.hero {
+  background: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.events,
+.sponsors,
+.media-sponsors,
+.news,
+.gallery {
+  padding: 2rem;
+  text-align: center;
+}
+
+.events .event-item,
+.news .news-item,
+.gallery .gallery-item {
+  background: #f4f4f4;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  width: 80%;
+}
+
+/* Event Images */
+.events img {
+  width: 50%; /* Reduced event image size by 50% */
+  height: auto;
+  border: 2px solid #800000;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.events img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  transform: scale(1.05);
+}
+
+.sponsors .sponsor-list,
+.media-sponsors .media-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sponsor,
+.media {
+  background: #f4f4f4;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  width: 150px;
+  text-align: center;
+}
+
+.footer {
+  background: #800000;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .second-nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sponsor,
+  .media {
+    width: 100%;
+  }
+
+  .events .event-item,
+  .news .news-item,
+  .gallery .gallery-item {
+    width: 100%;
+  }
+}
+
+.header-container img.watermark-left,
+.header-container img.watermark-right {
+  position: absolute;
+  opacity: 0.2; /* Watermark transparency */
+  width: 20%; /* Adjusted width to half the header's height */
+  height: auto;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Align vertically */
+}
+
+.header-container img.watermark-left {
+  left: 0; /* Align to the left edge */
+}
+
+.header-container img.watermark-right {
+  right: 0; /* Align to the right edge */
+}
