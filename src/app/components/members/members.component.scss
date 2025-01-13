@@ -1,0 +1,39 @@
+.members {
+    padding: 2rem;
+    text-align: center;
+}
+
+.member {
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: #f9f9f9;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #800000;
+}
+
+.member-info {
+    text-align: left;
+}
+
+.member-info h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #800000;
+}
+
+.member-info p {
+    font-size: 1rem;
+    color: #555;
+}

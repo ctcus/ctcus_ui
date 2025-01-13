@@ -147,6 +147,14 @@ header {
   margin-top: 2rem;
 }
 
+.main-content{
+  height: 100%;
+  flex: 1; 
+  padding: 20px;
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .second-nav ul {
