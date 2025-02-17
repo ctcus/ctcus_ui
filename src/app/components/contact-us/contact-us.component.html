@@ -1,4 +1,19 @@
 <section class="contact">
-    <h1>Contact Us</h1>
-    <p>Feel free to reach out to us at <strong>support&#64;ctstc.org</strong> for any inquiries or collaborations!</p>
+  <h1>Contact Us</h1>
+  <p>
+    Feel free to reach out to us at <strong>support&#64;ctstc.org</strong> for
+    any inquiries or collaborations!
+  </p>
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" ngModel required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" ngModel required />
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" ngModel required />
+
+    <button type="submit">Submit</button>
+  </form>
 </section>
